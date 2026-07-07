@@ -13,7 +13,7 @@ function Hero() {
         </h1>
 
         <h3 className="text-xl md:text-2xl font-semibold text-slate-600 mb-5">
-          Java Full Stack & MERN Developer
+          Aspiring Software Engineer • Java • MERN • Spring Boot
         </h3>
 
         <p className="text-slate-700 text-lg leading-8 max-w-lg mb-8">
