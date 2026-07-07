@@ -1,3 +1,4 @@
+import resume from "../assets/resume.pdf";
 function Contact() {
   return (
     <section id="contact" className="py-28 bg-[#f7f8f6]">
@@ -34,12 +35,42 @@ function Contact() {
           </button>
         </form>
 
-        <div className="flex flex-wrap justify-center gap-8 mt-10 text-sm text-slate-700">
-          <span>✉ Email</span>
-          <span>LinkedIn</span>
-          <span>GitHub</span>
-          <span>Resume</span>
-        </div>
+       <div className="flex flex-wrap justify-center gap-8 mt-10 text-sm font-medium">
+
+  <a
+    href="mailto:ishika.27parmar@gmail.com"
+    className="hover:text-[#566b1f] transition"
+  >
+    ✉ Email
+  </a>
+
+  <a
+    href="https://www.linkedin.com/in/ishika-parmar-383167377"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-[#566b1f] transition"
+  >
+    LinkedIn
+  </a>
+
+  <a
+    href="https://github.com/Ishika-Parmar-27"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-[#566b1f] transition"
+  >
+    GitHub
+  </a>
+
+  <a
+    href={resume}
+    download
+    className="hover:text-[#566b1f] transition"
+  >
+    Resume
+  </a>
+
+</div>
       </div>
     </section>
   );

@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -7,10 +9,13 @@ import Experience from "./components/Experience";
 import Journey from "./components/Journey";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import ThemeToggle from "./components/ThemeToggle";
 
 function App() {
+  const [isDark, setIsDark] = useState(false);
+
   return (
-    <>
+    <div className={isDark ? "dark-mode" : "light-mode"}>
       <Navbar />
       <Hero />
       <About />
@@ -20,7 +25,9 @@ function App() {
       <Journey />
       <Contact />
       <Footer />
-    </>
+
+      <ThemeToggle isDark={isDark} setIsDark={setIsDark} />
+    </div>
   );
 }
 

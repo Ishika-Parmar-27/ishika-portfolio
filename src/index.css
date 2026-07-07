@@ -14,3 +14,44 @@ body {
   background: #f7f8f6;
   color: #07111f;
 }
+.light-mode {
+  background: #f7f8f6;
+  color: #07111f;
+}
+
+.dark-mode {
+  background: #11140f;
+  color: #f7f8f6;
+}
+
+.dark-mode section {
+  background: #11140f !important;
+  color: #f7f8f6;
+}
+
+.dark-mode header {
+  background: #11140f !important;
+  color: #f7f8f6;
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode p,
+.dark-mode a,
+.dark-mode span {
+  color: inherit;
+}
+
+.dark-mode .bg-white,
+.dark-mode .bg-\[\#fafaf9\],
+.dark-mode .bg-\[\#f7f8f6\],
+.dark-mode .bg-\[\#f1f2f0\] {
+  background: #1b2018 !important;
+}
+
+.dark-mode .border-gray-200,
+.dark-mode .border-gray-300,
+.dark-mode .border-gray-400 {
+  border-color: #3a4232 !important;
+}
