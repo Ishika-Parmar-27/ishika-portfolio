@@ -1,19 +1,24 @@
+
+
 function Projects() {
   const projects = [
     {
       title: "Study Quest",
-      desc: "A gamified education platform designed to make learning engaging.",
+      desc: "A gamified education platform designed to make learning engaging and rewarding.",
       tech: "React • Node.js",
+      image: null,
     },
     {
       title: "Student Management System",
-      desc: "A CRUD system for managing student records.",
+      desc: "A CRUD system for managing student records with a clean interface.",
       tech: "MERN Stack",
+      image: null,
     },
     {
       title: "Employee Performance Management",
-      desc: "A system to track employees, projects and performance.",
+      desc: "A system to track employees, projects and performance reviews.",
       tech: "Java • Spring Boot",
+      image: null,
     },
   ];
 
@@ -29,14 +34,21 @@ function Projects() {
           {projects.map((project) => (
             <div
               key={project.title}
-              className="bg-[#f7f8f6] rounded-xl border border-gray-200 overflow-hidden"
+              className="bg-[#f7f8f6] rounded-xl border border-gray-200 overflow-hidden hover:shadow-lg transition"
             >
-              <div className="h-44 bg-[#dfe3dc] flex items-center justify-center text-[#566b1f] font-bold">
-                Project Preview
-              </div>
-
+              {project.image ? (
+  <img
+    src={project.image}
+    alt={project.title}
+    className="h-44 w-full object-cover"
+  />
+) : (
+  <div className="h-44 bg-[#dfe3dc] flex items-center justify-center text-[#566b1f] font-bold">
+    Project Preview
+  </div>
+)}
               <div className="p-6">
-                <span className="text-xs bg-[#e6eadf] px-3 py-1 rounded font-semibold">
+                <span className="text-xs bg-[#e6eadf] px-3 py-1 rounded font-semibold text-[#566b1f]">
                   {project.tech}
                 </span>
 
