@@ -1,6 +1,7 @@
 function Navbar() {
   return (
-    <header className="max-w-6xl mx-auto px-6 py-6 flex items-center justify-between">
+    <header className="sticky top-0 z-50 bg-[#f7f8f6]/90 backdrop-blur-md border-b border-gray-200">
+  <div className="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between"></div>
       <h2 className="text-lg font-semibold text-[#3d3d3d]">
         Ishika Parmar
       </h2>
