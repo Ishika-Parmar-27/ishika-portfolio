@@ -1,5 +1,5 @@
 import { ArrowRight, Download } from "lucide-react";
-
+import profile from "../assets/profile.png";
 function Hero() {
   return (
     <section
@@ -36,11 +36,11 @@ function Hero() {
 
       <div className="flex justify-center md:justify-end">
         <div className="w-72 h-72 md:w-80 md:h-80 rounded-full border-4 border-[#cfe87a] flex items-center justify-center bg-white shadow-sm">
-          <div className="w-56 h-56 md:w-64 md:h-64 rounded-full bg-[#dbe5cf] flex items-center justify-center text-7xl font-bold text-[#566b1f]">
-            IP
+          <img src={profile} alt="Ishika Parmar"className="w-56 h-56 md:w-64 md:h-64 rounded-full object-cover"/>
+          
           </div>
         </div>
-      </div>
+      
     </section>
   );
 }
