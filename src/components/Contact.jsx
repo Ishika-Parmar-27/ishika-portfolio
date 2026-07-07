@@ -1,37 +1,40 @@
 function Contact() {
   return (
-    <section id="contact" className="py-24 bg-[#f7f8f6]">
+    <section id="contact" className="py-28 bg-[#f7f8f6]">
       <div className="max-w-3xl mx-auto px-6 text-center">
-        <h2 className="text-5xl font-bold mb-6">Let's Connect</h2>
+        <h2 className="text-5xl font-bold mb-6">
+          Let's Build Something Together
+        </h2>
 
-        <p className="text-slate-700 mb-10">
-          I'm currently looking for new opportunities in Software Engineering.
+        <p className="text-slate-700 mb-10 leading-7">
+          Whether you have an opportunity, a project idea, or simply want to
+          connect, I'd love to hear from you.
         </p>
 
         <form className="grid gap-5 text-left">
           <div className="grid sm:grid-cols-2 gap-5">
             <input
-              className="p-4 border border-gray-300 rounded-md bg-white"
+              className="p-4 border border-gray-300 rounded-xl bg-white outline-none focus:border-[#566b1f]"
               placeholder="Your Name"
             />
 
             <input
-              className="p-4 border border-gray-300 rounded-md bg-white"
+              className="p-4 border border-gray-300 rounded-xl bg-white outline-none focus:border-[#566b1f]"
               placeholder="your@email.com"
             />
           </div>
 
           <textarea
-            className="p-4 border border-gray-300 rounded-md bg-white h-32"
+            className="p-4 border border-gray-300 rounded-xl bg-white h-32 outline-none focus:border-[#566b1f]"
             placeholder="How can I help you?"
           />
 
-          <button className="bg-[#566b1f] text-white py-4 rounded-md font-semibold">
-            Send Message
+          <button className="bg-[#566b1f] text-white py-4 rounded-xl font-semibold hover:bg-[#485b19] hover:-translate-y-1 hover:shadow-xl transition-all duration-300">
+            Send Email
           </button>
         </form>
 
-        <div className="flex flex-wrap justify-center gap-8 mt-10 text-sm">
+        <div className="flex flex-wrap justify-center gap-8 mt-10 text-sm text-slate-700">
           <span>✉ Email</span>
           <span>LinkedIn</span>
           <span>GitHub</span>
