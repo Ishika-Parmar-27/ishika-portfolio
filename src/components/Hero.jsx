@@ -1,6 +1,6 @@
 import { ArrowRight, Download } from "lucide-react";
 import profile from "../assets/profile.png";
-
+import resume from "../assets/resume.pdf";
 function Hero() {
   return (
     <section
@@ -23,15 +23,22 @@ function Hero() {
         </p>
 
         <div className="flex flex-wrap gap-4">
-          <button className="bg-[#566b1f] text-white px-8 py-4 rounded-xl font-semibold flex items-center gap-2 hover:bg-[#485b19] hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
+          <a
+href="#projects" className="bg-[#566b1f] text-white px-8 py-4 rounded-xl font-semibold flex items-center gap-2 hover:bg-[#485b19] hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
             View Projects
             <ArrowRight size={18} />
-          </button>
+          </a>
 
-          <button className="border border-gray-400 px-8 py-4 rounded-xl font-semibold flex items-center gap-2 hover:bg-white hover:-translate-y-2 hover:shadow-xl transition-all duration-300">
-            Download Resume
-            <Download size={18} />
-          </button>
+           
+            <a
+  href={resume}
+  download
+  className="border border-gray-400 px-8 py-4 rounded-xl font-semibold flex items-center gap-2 hover:bg-white hover:-translate-y-2 hover:shadow-xl transition-all duration-300"
+>
+  Download Resume
+  <Download size={18} />
+</a>
+          
         </div>
       </div>
 
