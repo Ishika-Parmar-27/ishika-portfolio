@@ -2,19 +2,23 @@ import { GraduationCap, Briefcase, Rocket } from "lucide-react";
 
 function About() {
   return (
-    <section id="about" className="bg-white py-24">
-      <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16">
-        <div>
-          <h2 className="text-4xl font-bold mb-6">About Me</h2>
-          <p className="text-slate-700 leading-8 mb-5">
-            I am a Computer Science student with a deep fascination for the full
-            software development lifecycle. My journey started with curiosity
-            about how data moves across the web.
-          </p>
-          <p className="text-slate-700 leading-8">
-            Currently, I am honing my skills as a <b>Java Full Stack Intern</b>,
-            where I apply theoretical knowledge to real-world development.
-          </p>
+    <section id="about" className="bg-white py-28">
+      <div className="max-w-6xl mx-auto px-6 grid lg:grid-cols-2 gap-20 items-center">
+       <div>
+          <h2 className="text-5xl font-bold mb-6">About Me</h2>
+          <p className="text-slate-700 leading-8 text-lg mb-6">
+  I am a Computer Science student passionate about building impactful
+  software and constantly learning modern technologies. My journey
+  started with curiosity about how websites and applications work,
+  which gradually led me into full-stack development.
+</p>
+
+<p className="text-slate-700 leading-8 text-lg">
+  Currently, I'm working as a <span className="font-semibold text-[#566b1f]">
+    Java Full Stack Intern
+  </span>, where I'm gaining practical experience in Spring Boot,
+  React, REST APIs and database-driven applications.
+</p>
         </div>
 
         <div className="grid sm:grid-cols-2 gap-5">
@@ -31,9 +35,12 @@ function About() {
 
 function Card({ icon, title, text }) {
   return (
-    <div className="bg-[#f4f5f3] border border-gray-200 rounded-xl p-7">
-      <div className="text-[#566b1f] mb-4">{icon}</div>
-      <h3 className="font-bold text-xl mb-3">{title}</h3>
+    <div className="bg-[#fafaf9] border border-gray-200 shadow-sm hover:-translate-y-2
+hover:shadow-xl
+transition-all
+duration-300 rounded-2xl p-8">
+      <div className="text-[#6d812d] mb-4">{icon}</div>
+      <h3 className="font-bold text-2xl mb-3">{title}</h3>
       <p className="text-slate-700">{text}</p>
     </div>
   );
