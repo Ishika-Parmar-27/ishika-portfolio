@@ -1,16 +1,160 @@
-# React + Vite
+# 🌿 Ishika Parmar | Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A modern and responsive personal portfolio built to showcase my projects, skills, and journey as a Computer Science student and aspiring Full Stack Developer.
 
-Currently, two official plugins are available:
+## 🌐 Live Website
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+👉 https://ishika-portfolio-snowy.vercel.app/
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Preview
 
-## Expanding the Oxlint configuration
+> A clean and minimal portfolio featuring smooth animations, dark mode, interactive project cards, and a working contact form.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+---
+
+## 🚀 Features
+
+- 🎨 Clean & Minimal UI
+- 🌙 Light / Dark Theme
+- ⚡ Smooth Animations (Framer Motion)
+- 📂 Interactive Project Showcase
+- 📄 Resume Download
+- 📧 Working Contact Form (EmailJS)
+- 💻 Responsive Design
+- 🔗 GitHub & LinkedIn Integration
+- 🚀 Hosted on Vercel
+
+---
+
+## 🛠 Tech Stack
+
+### Frontend
+
+- React.js
+- Vite
+- Tailwind CSS
+- Framer Motion
+
+### Integrations
+
+- EmailJS
+- Lucide React
+
+### Deployment
+
+- Vercel
+- GitHub
+
+---
+
+# 📌 Featured Projects
+
+## 🎮 Study Quest
+
+A gamified MERN application that makes studying more engaging.
+
+### Key Features
+
+- JWT Authentication
+- XP & Level Progression
+- Study Streaks
+- Achievement Badges
+- Analytics Dashboard
+- Leaderboard
+
+---
+
+## 🎓 Student Management System
+
+A full-stack CRUD application built using the MERN Stack.
+
+### Features
+
+- Create Students
+- Update Students
+- Delete Students
+- MongoDB Integration
+- REST APIs
+
+---
+
+## 👨‍💼 Employee Performance Management System
+
+A Spring Boot backend project focused on secure enterprise APIs.
+
+### Features
+
+- JWT Authentication
+- Spring Security
+- Swagger Documentation
+- Docker
+- MySQL
+- Role-Based Access Control
+
+---
+
+# 📂 Project Structure
+
+```text
+src
+│
+├── assets
+├── components
+├── App.jsx
+├── main.jsx
+└── index.css
+```
+
+---
+
+# ⚙️ Installation
+
+```bash
+git clone https://github.com/Ishika-Parmar-27/ishika-portfolio.git
+
+cd ishika-portfolio
+
+npm install
+
+npm run dev
+```
+
+---
+
+# 📬 Contact
+
+📧 **Email**
+
+ishika.27parmar@gmail.com
+
+🔗 **Portfolio**
+
+https://ishika-portfolio-snowy.vercel.app/
+
+💼 **LinkedIn**
+
+https://www.linkedin.com/in/ishika-parmar-383167377/
+
+💻 **GitHub**
+
+https://github.com/Ishika-Parmar-27
+
+---
+
+# ⭐ If you like this project
+
+Consider giving this repository a ⭐ on GitHub.
+
+It motivates me to continue building and sharing more projects.
+
+---
+
+## 👩‍💻 About Me
+
+I'm **Ishika Parmar**, a first-year B.Tech Computer Science student passionate about building modern web applications using the **MERN Stack** and **Spring Boot**.
+
+I'm currently exploring Full Stack Development while continuously improving my problem-solving skills and building real-world projects.
+
+Thanks for visiting! 💚
