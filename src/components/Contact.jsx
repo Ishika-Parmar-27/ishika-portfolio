@@ -19,37 +19,37 @@ function Contact() {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     if (!formData.from_name || !formData.from_email || !formData.message) {
-  toast.error("Please fill all fields.");
-  return;
-}
-    setLoading(true);
-    
+      toast.error("Please fill all fields.");
+      return;
+    }
 
-    emailjs
-      .send(
+    try {
+      setLoading(true);
+
+      await emailjs.send(
         import.meta.env.VITE_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         formData,
         import.meta.env.VITE_EMAILJS_PUBLIC_KEY
-      )
-      .then(() => {
-        setStatus("Email sent successfully!");
-        setFormData({
-          from_name: "",
-          from_email: "",
-          message: "",
-        });
-      })
-      .catch(() => {
-        toast.error("Something went wrong!");
-      })
-      .finally(() => {
-        setLoading(false);
+      );
+
+      toast.success("Email sent successfully!");
+
+      setFormData({
+        from_name: "",
+        from_email: "",
+        message: "",
       });
+    } catch (error) {
+      console.error("EmailJS Error:", error);
+      toast.error("Something went wrong!");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
